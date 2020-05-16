@@ -1,0 +1,21 @@
+.log-in-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $mainFont;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: bold;
+    color: #BC9CFF;
+    text-transform: uppercase;
+    border-radius: 22px;
+    padding: 0px;
+    background: $mainLinearGradient;
+    border: none;
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+    }
+}

@@ -1,0 +1,10 @@
+//import utils
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/normalize";
+
+//import modules
+@import "modules/header/index.scss";
+@import "modules/btn/log-in-btn/index.scss";
+@import "modules/btn/reg-btn/index.scss";
