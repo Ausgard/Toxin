@@ -1,0 +1,39 @@
+.accent-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-transform: uppercase;
+    font-family: $mainFont;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    border-radius: 22px;
+    background: $mainLinearGradient;
+    border: none;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.accent-btn--header {
+    min-width: 196px;
+    min-height: 34px;
+    margin: 0px 0px 0px 1.6%;
+}
+
+.accent-btn--form-send {
+    min-width: 320px;
+    min-height: 44px;
+    &:after {
+        display: flex;
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-image: url(/assets/img/arrow_forward.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 50% 50%;
+        margin: 0px 0% 0px 43%;
+    }
+}

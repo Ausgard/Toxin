@@ -1,0 +1,65 @@
+.datepick-block {
+    display: none;
+    min-width: 318px;
+    min-height: 367px;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    z-index: 1;
+    margin: 50.15% 0px 0px 0px;
+}
+
+.datepick-block__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $headlineFont;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 1.2;
+    letter-spacing: 0.022em;
+}
+
+.datepick-block__table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $mainFont;
+    font-size: 12px;
+    tbody {
+        width: 100%;
+    }
+}
+
+.datepick-block__table-head {
+    width: 100%;
+}
+
+.datepick-block__table-head-row,
+.datepick-block__table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9%;
+    margin: 8% 0px 8% 0px;
+    th {
+        color: #BC9CFF;
+    }
+}
+
+.datepick-block__table-row {
+    padding: 0 10%;
+    margin: 0% 0px 7% 0px;
+    td {
+        color: rgba(31, 32, 65, 0.5);
+    }
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 15px;
+        min-height: 15px;
+    }
+}

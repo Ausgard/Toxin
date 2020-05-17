@@ -1,0 +1,29 @@
+.control-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.control-block__abort,
+.control-block__apply {
+    font-family: $mainFont;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+}
+
+.control-block__abort {
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.control-block__apply {
+    color: #BC9CFF;
+}
+
+.control-block--indent {
+    margin: 3.2% 0% 0% 0%;
+    padding: 0% 4%;
+}

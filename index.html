@@ -31,7 +31,110 @@
       </ul>
     </nav>
     <button class="log-in-btn log-in-btn--header"><span>Войти</span></button>
-    <button class="reg-btn reg-btn--header">Зарегистрироваться</button>
+    <button class="accent-btn accent-btn--header">Зарегистрироваться</button>
   </header>
+  <section class="main-section">
+    <form class="search-form search-form--in-main-section" action="#" method="POST">
+      <p class="search-form__headline">Найдём номера под ваши пожелания</p>
+      <div class="search-form__date">
+        <div class="info-block info-block--search-arrival">
+          <label for="arrival-input">Прибытие</label>
+          <input type="text" name="arrival-input" placeholder="дд.мм.гггг">
+        </div>
+        <div class="info-block info-block--search-departure">
+          <label for="departure-input">Выезд</label>
+          <input type="text" name="departure-input" placeholder="дд.мм.гггг">
+        </div>
+      </div>
+      <div class="datepick-block">
+        <div class="datepick-block__nav">
+          <button class="arrow-left arrow-left--margin" type="button"></button>
+          <p class="datepick-block__headline">Август 2019</p>
+          <button class="arrow-right arrow-right--margin" type="button"></button>
+        </div>
+        <table class="datepick-block__table">
+          <thead class="datepick-block__table-head">
+            <tr class="datepick-block__table-head-row">
+              <th>Пн</th>
+              <th>Вт</th>
+              <th>Ср</th>
+              <th>Чт</th>
+              <th>Пт</th>
+              <th>Сб</th>
+              <th>Вс</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="datepick-block__table-row">
+              <td><span>29</span></td>
+              <td><span>30</span></td>
+              <td><span>31</span></td>
+              <td><span>1</span></td>
+              <td><span>2</span></td>
+              <td><span>3</span></td>
+              <td><span>4</span></td>
+            </tr>
+            <tr class="datepick-block__table-row">
+              <td><span>5</span></td>
+              <td><span>6</span></td>
+              <td><span>7</span></td>
+              <td><span>8</span></td>
+              <td><span>9</span></td>
+              <td><span>10</span></td>
+              <td><span>11</span></td>
+            </tr>
+            <tr class="datepick-block__table-row">
+              <td><span>12</span></td>
+              <td><span>13</span></td>
+              <td><span>14</span></td>
+              <td><span>15</span></td>
+              <td><span>16</span></td>
+              <td><span>17</span></td>
+              <td><span>18</span></td>
+            </tr>
+            <tr class="datepick-block__table-row">
+              <td><span>19</span></td>
+              <td><span>20</span></td>
+              <td><span>21</span></td>
+              <td><span>22</span></td>
+              <td><span>23</span></td>
+              <td><span>24</span></td>
+              <td><span>25</span></td>
+            </tr>
+            <tr class="datepick-block__table-row">
+              <td><span>26</span></td>
+              <td><span>27</span></td>
+              <td><span>28</span></td>
+              <td><span>29</span></td>
+              <td><span>30</span></td>
+              <td><span>31</span></td>
+              <td><span>1</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="control-block control-block--indent">
+          <button class="control-block__abort" type="reset">Очистить</button>
+          <button class="control-block__apply" type="button">Применить</button>
+        </div>
+      </div>
+      <div class="info-block info-block--guests">
+        <label for="guest-input">Гости</label>
+        <input type="text" name="guest-input" placeholder="Сколько гостей">
+        <div class="data-list data-list--guests">
+          <div class="data-list__item">
+            <p>Взрослые</p><button class="btn-minus" type="button"></button><span>0</span><button class="btn-plus" type="button"></button>
+          </div>
+          <div class="data-list__item">
+            <p>Дети</p><button class="btn-minus" type="button"></button><span>0</span><button class="btn-plus" type="button"></button>
+          </div>
+          <div class="data-list__item">
+            <p>Младенци</p><button class="btn-minus" type="button"></button><span>0</span><button class="btn-plus" type="button"></button>
+          </div>
+        </div>
+      </div>
+      <button class="accent-btn accent-btn--form-send" type="button">Подобрать номер</button>
+    </form>
+    <p class="main-section__text">Лучшие номера для вашей работы,<br> отдыха и просто вдохновения</p>
+  </section>
 </body>
 </html>

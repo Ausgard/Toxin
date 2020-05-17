@@ -1,0 +1,28 @@
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 57.639vw;
+    background: #c8b3a4 url(/assets/img/image-3.jpg);
+    background-size: 100%;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+}
+
+.search-form--in-main-section {
+    align-self: flex-start;
+    margin: 4.85% 0% 0% 9.7%;
+}
+
+.main-section__text {
+    align-self: flex-end;
+    padding: 0px;
+    margin: 0% 9.5% 1.4% 0%;
+    font-family: $mainFont;
+    color: $mainFontColor;
+    line-height: 24px;
+    letter-spacing: -0.08em;
+    text-align: right;
+}
