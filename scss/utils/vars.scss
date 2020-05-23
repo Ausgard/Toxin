@@ -1,13 +1,16 @@
 $mainFont: 'Montserrat', Helvetica, Arial, sans-serif;
 $headlineFont: 'Quicksand', Helvetica, Arial, sans-serif;
+$baseFontSize: 12;
+$maxFontSize: 14;
+$fontWeight: 400;
+$letterSpacing: 0.00em;
+$lineHeight: 1.2;
+$opacity: 1;
 
-$mainFontColor: rgb(31, 32, 65);
+$mainFontColor: #1F2041;
 $mainLinearGradient: linear-gradient(0deg, rgb(139, 164, 249), rgb(189, 158, 255));
-$mainFontSize: 14px;
-$mainFontWeight: 400;
 
-$lgDesktopWidth: 1920px;
-$desktopWidth: 1440px;
-$smDesktopWidth: 980px;
-$tableWidth: 768px;
-$smPhoneWidth: 320px;
+$lgDesktopWidth: 1920;
+$desktopWidth: 1440;
+$tabletWidth: 1200;
+$smPhoneWidth: 320;

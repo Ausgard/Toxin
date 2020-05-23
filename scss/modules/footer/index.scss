@@ -1,0 +1,129 @@
+.footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__container {
+    max-height: 443px;
+    width: 80.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @include fontOptions(12, 14, $mainFont, $fontWeight, $lineHeight, $letterSpacing, $opacity);
+    min-width: 320px;
+    background-color: #ffffff;
+    padding: 6.95% 0% 0% 0%;
+}
+
+.footer__description-block {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 0% 0% 0%;
+}
+
+.footer__description {
+    line-height: 24px;
+    opacity: 0.75;
+    margin: 5.7% 0% 0% 0%;
+}
+
+.footer__nav {
+    margin: 0.4% 0% 0% auto;
+}
+
+.footer__about {
+    margin: 0.4% auto 0% auto;
+    padding: 0% 0% 0% 1%;
+}
+
+.footer__info {
+    margin: 0.4% 4.6% 0% auto;
+}
+
+.footer__subscribe {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+    margin: 0.4% 0% 0% 0%;
+}
+
+.footer-subscribe__deskription {
+    line-height: 24px;
+    color: rgba($mainFontColor, 0.75);
+    margin: 7% 0% 8.7% 0%;
+}
+
+.footer-subscribe__headline {
+    margin: 0% 0% 0% 0%;
+}
+
+.footer-subscribe__mail {
+    width: 245px;
+    height: 42px;
+    border: 1px solid rgba($mainFontColor, 0.25);
+    border-radius: 4px;
+    padding: 0% 0% 0% 5%;
+    background-image: url(/assets/img/arrow_right.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 95% 49%;
+}
+
+.footer__nav,
+.footer__about,
+.footer__info,
+.footer__subscribe {
+    display: flex;
+    flex-direction: column;
+    line-height: 17px;
+    a {
+        text-decoration: none;
+        color: rgba($mainFontColor, 0.5);
+    }
+    :nth-child(1) {
+        text-transform: uppercase;
+        @include fontOptions (12, 12, $headlineFont, 700, $lineHeight, 0.05em, 1);
+    }
+}
+
+.footer-nav__link {
+    margin: 0% 0% 15% 0%;
+}
+
+.footer-about__link {
+    margin: 0% 0% 20% 0%;
+}
+
+.footer-info__link {
+    margin: 0% 0% 14.5% 0%;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    min-height: 70px;
+    border-top: 1px solid rgba($mainFontColor, 0.1);
+    margin: 5.4% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+}
+
+.footer__copyright-text {
+    @include fontOptions ($baseFontSize, $maxFontSize, $mainFont, $fontWeight, $lineHeight, $letterSpacing, 0.75);
+    margin: auto 0% auto 9.7%;
+}
+
+.footer__social {
+    height: auto;
+    min-width: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3% 9.75% 0% 0%;
+}
