@@ -3,11 +3,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-width: $smPhoneWidth;
-    max-width: $lgDesktopWidth;
+    width: 80.5vw;
     height: 70px;
     background-color: #fff;
-    padding: 0px 9.8%;
+    margin: 0 auto;
+    // padding: 0px 9.8%;
 }
 
 .header__nav-list {
@@ -29,8 +29,7 @@
     display: flex;
     align-items: center;
     min-height: 70px;
-    line-height: 17px;
-    color: $mainFontColor;
+    @include fontOptions (13, $maxFontSize, $mainFont, $fontWeight, $lineHeight, $letterSpacing, 0.5);
     text-decoration: none;
     padding: 0 10px;
 }
