@@ -1,0 +1,89 @@
+.search-block {
+    width: 80.5vw;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.search-block-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 266px;
+    margin: 2.72% 0% 0% 0%;
+}
+
+.search-block-filter__control {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    min-width: 266px;
+    max-height: 71.5px;
+    margin: 4% 0% 0% 0%;
+}
+
+.search-block-filter__price-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 0% 8.2% 0%;
+}
+
+.search-block-filter__headline {
+    @include fontOptions ($baseFontSize, $baseFontSize, $mainFont, 700, $lineHeight, $letterSpacing, $textDecoration, uppercase, rgba($fontColor, 1));
+    margin: 0% 0% 0% 0%;
+}
+
+.search-block-filter__price-controls {
+    display: flex;
+    justify-content: space-between;
+    min-width: 102px;
+    @include fontOptions ($baseFontSize, $baseFontSize, $mainFont, 400, $lineHeight, $letterSpacing, $textDecoration, uppercase, rgba($fontColor, 0.5));
+}
+
+.search-block-filter__scale {
+    position: relative;
+    height: 4px;
+    background-color: #ffffff;
+    border: 1px solid rgba($fontColor, 0.25);
+    border-radius: 3px;
+}
+
+.search-block-filter__bar {
+    position: absolute;
+    width: 88px;
+    height: 6px;
+    left: 30%;
+    right: 0%;
+    top: -1px;
+    bottom: 0%;
+    background: $priseBarLinearGradient;
+}
+
+.search-block-filter__range-controls {
+    margin: 0% 0% 5.5% 0%;
+}
+
+.search-block-filter__range-toggle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    right: 0%;
+    top: 44%;
+    bottom: 0%;
+    background: $priseBarLinearGradient;
+}
+
+.search-block-filter__range-toggle-min {
+    left: 28%;
+}
+
+.search-block-filter__range-toggle-max {
+    left: 60%;
+}
+
+.search-block-filter__text {
+    @include fontOptions ($baseFontSize, $baseFontSize, $mainFont, 400, 14px, $letterSpacing, $textDecoration, none, rgba($fontColor, 0.5));
+    margin: 0% 0% 0% 0%;
+}
