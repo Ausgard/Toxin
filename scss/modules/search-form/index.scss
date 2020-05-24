@@ -16,12 +16,7 @@
 
 .search-form__headline {
     display: flex;
-    font-family: $headlineFont;
-    font-size: 24px;
-    color: $mainFontColor;
-    letter-spacing: 0.054em;
-    line-height: 1.2;
-    font-weight: bold;
+    @include fontOptions (20, 24, $headlineFont, 700, $lineHeight, 0.054em, $textDecoration, $textTransform, rgba($fontColor, 1));
     margin: 11% 0% 6% 8%;
     padding: 0px 20% 0px 0px;
 }

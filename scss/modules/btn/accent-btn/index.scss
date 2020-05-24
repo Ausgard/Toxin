@@ -3,9 +3,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    text-transform: uppercase;
-    @include fontOptions (11, 12, $mainFont, 700, 15px, $letterSpacing, 1);
-    color: #ffffff;
+    @include fontOptions (11, 12, $mainFont, 700, 15px, $letterSpacing, $textDecoration, uppercase, rgba(255, 255, 255, 1));
     border-radius: 22px;
     background: $mainLinearGradient;
     border: none;

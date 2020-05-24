@@ -14,7 +14,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-    @include fontOptions(12, 14, $mainFont, $fontWeight, $lineHeight, $letterSpacing, $opacity);
+    @include fontOptions (12, 14, $mainFont, $fontWeight, $lineHeight, $letterSpacing, $textDecoration, none, $fontColor);
     min-width: 320px;
     background-color: #ffffff;
     padding: 6.95% 0% 0% 0%;
@@ -86,8 +86,7 @@
         color: rgba($mainFontColor, 0.5);
     }
     :nth-child(1) {
-        text-transform: uppercase;
-        @include fontOptions (12, 12, $headlineFont, 700, $lineHeight, 0.05em, 1);
+        @include fontOptions (12, 12, $mainFont, 700, $lineHeight, 0.00em, $textDecoration, uppercase, rgba($mainFontColor, 1));
     }
 }
 
@@ -115,7 +114,7 @@
 }
 
 .footer__copyright-text {
-    @include fontOptions ($baseFontSize, $maxFontSize, $mainFont, $fontWeight, $lineHeight, $letterSpacing, 0.75);
+    @include fontOptions ($baseFontSize, $maxFontSize, $mainFont, $fontWeight, $lineHeight, $letterSpacing, $textDecoration, $textTransform, rgba($mainFontColor, 0.75));
     margin: auto 0% auto 9.7%;
 }
 

@@ -2,9 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include fontOptions (11, 12, $mainFont, 700, 15px, $letterSpacing, 1);
-    color: #BC9CFF;
-    text-transform: uppercase;
+    // @include fontOptions (11, 12, $mainFont, 700, 15px, $letterSpacing, 1);
+    @include fontOptions (11, 12, $mainFont, 700, 15px, $letterSpacing, uppercase, $textDecoration, rgba($accentPurple, 1));
     border-radius: 22px;
     padding: 0px;
     background: $mainLinearGradient;
