@@ -136,7 +136,7 @@
 .search-block-filter__accessibility {
     display: flex;
     flex-direction: column;
-    margin: 12% 0% 0% 0%;
+    margin: 12% 0% 12% 0%;
     input[type=checkbox],
     label,
     p {
@@ -191,6 +191,76 @@
         }
         &:nth-of-type(2) {
             padding-right: 5%;
+        }
+    }
+}
+.search-block-filter__additionally-block {
+    margin: 0% 0% 0% 0%;
+}
+
+.search-block-filter__additionally-btn {
+    @include fontOptions ($baseFontSize, $baseFontSize, $mainFont, 700, $lineHeight, $letterSpacing, $textDecoration, uppercase, rgba($fontColor, 1));
+    position: relative;
+    border: none;
+    background-color: transparent;
+    padding: 0%;
+    margin: 4% 0% 6.5% 0%;
+    &:after {
+        display: flex;
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        content: "";
+        background-image: url(/assets/img/expand_more.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0% 0%;
+        top: 0;
+        left: 113.5%;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.search-block-filter__additionally-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 266px;
+    min-height: 171px;
+    input[type=checkbox] {
+        @include hideCheckbox();
+        &:checked + label:before {
+            width: 20px;
+            height: 20px;
+            background-image: url(/assets/img/icon_checkbox-checked.svg);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: 100%;
+            border: none;
+        }
+    }
+    label {
+        @include fontOptions ($baseFontSize, $maxFontSize, $mainFont, $fontWeight, 18px, $letterSpacing, $textDecoration, $textTransform, rgba($fontColor, 0.5));
+        position: relative;
+        margin: 0% 0 0% 12%;
+        &:before {
+            position: absolute;
+            content: "";
+            display: flex;
+            width: 18px;
+            height: 18px;
+            border: 1px solid rgba($fontColor, 0.25);
+            border-radius: 4px;
+            top: 0;
+            left: -14%;
+            right: 0;
+            bottom: 0;
+        }
+        &:hover {
+            &:before {
+                border: 1px solid rgba($accentPurple, 1);
+            }
         }
     }
 }

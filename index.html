@@ -99,6 +99,38 @@
         <label for="assistant">Помощник для инвалидов</label>
         <p>На 1 этаже вас встретит специалист  и проводит до номера.</p>
       </div>
+      <div class="info-block info-block--search-filter">
+        <label for="guest-input">Удобства номера</label>
+        <input type="text" name="guest-input" placeholder="2 спальни, 2 кровати...">
+        <div class="data-list data-list--guests">
+          <div class="data-list__item">
+            <p>Взрослые</p><button class="btn-minus" type="button"></button><span>0</span><button class="btn-plus" type="button"></button>
+          </div>
+          <div class="data-list__item">
+            <p>Дети</p><button class="btn-minus" type="button"></button><span>0</span><button class="btn-plus" type="button"></button>
+          </div>
+          <div class="data-list__item">
+            <p>Младенци</p><button class="btn-minus" type="button"></button><span>0</span><button class="btn-plus" type="button"></button>
+          </div>
+        </div>
+      </div>
+      <div class="search-block-filter__additionally-block">
+        <button class="search-block-filter__additionally-btn" type="button">Дополнительные удобства</button>
+        <div class="search-block-filter__additionally-list">
+          <input type="checkbox" name="breakfast" id="breakfast">
+          <label for="breakfast">Завтрак</label>
+          <input type="checkbox" name="desk" id="desk" checked>
+          <label for="desk">Письменный стол</label>
+          <input type="checkbox" name="feeding-chair" id="feeding-chair" checked>
+          <label for="feeding-chair">Стул для кормления</label>
+          <input type="checkbox" name="crib" id="crib" checked>
+          <label for="crib">Кроватка</label>
+          <input type="checkbox" name="tv" id="tv">
+          <label for="tv">Телевизор</label>
+          <input type="checkbox" name="shampoo" id="shampoo">
+          <label for="shampoo">Шампунь</label>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer">
