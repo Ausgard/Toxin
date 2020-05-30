@@ -8,6 +8,7 @@
 
 .footer__container {
     max-height: 443px;
+    max-width: 1160px;
     width: 80.5vw;
     display: flex;
     flex-direction: row;
@@ -107,6 +108,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100vw;
+    max-width: 1160px;
     min-height: 70px;
     border-top: 1px solid rgba($mainFontColor, 0.1);
     margin: 5.4% 0% 0% 0%;

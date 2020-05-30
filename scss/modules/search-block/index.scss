@@ -6,23 +6,24 @@
 }
 
 .search-block__rooms {
-    width: 100%;
-    @include flexGrid(column, flex-start, center, wrap);
+    width: auto;
+    @include flexGrid(column, flex-start, flex-start, wrap);
+    margin-left: 1.5%;
 }
 
 .search-block__room-list {
     width: 100%;
+    max-width: 1091px;
     height: 100%;
     max-width: 834px; //834px 57.917vw
     max-height: 1091px; //1091px 75.764vw
     @include flexGrid(row, space-between, center, wrap);
-    margin-left: 6.7%;
 }
 
 .search-block__room-headline {
     @include fontOptions (22, 24, $headlineFont, 700, $lineHeight, 0.045em, $textDecoration, $textTransform, $fontColor);
     align-self: flex-start;
-    margin: 3.5% 0% 2.4% 6.54%;
+    margin: 3.78% 0% 2.5% 0%; //6.54
 }
 
 .search-block__room-card {
@@ -32,6 +33,7 @@
     height: 17.848vw; //257
     max-width: 270px;
     max-height: 257px;
+    box-shadow: 0px 10px 20px rgba($fontColor, 0.07);
     margin-bottom: 2.48%;
 }
 
