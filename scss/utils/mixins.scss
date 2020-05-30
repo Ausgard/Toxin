@@ -27,3 +27,13 @@
     width: 1px;
     overflow: hidden;
 }
+
+//grids
+
+@mixin flexGrid($f-direction, $j-content, $a-items, $f-wrap) {
+    display: flex;
+    flex-direction: $f-direction;
+    justify-content: $j-content;
+    align-items: $a-items;
+    flex-wrap: $f-wrap;
+}

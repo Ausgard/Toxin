@@ -1,3 +1,4 @@
+//font
 $mainFont: 'Montserrat', Helvetica, Arial, sans-serif;
 $headlineFont: 'Quicksand', Helvetica, Arial, sans-serif;
 $baseFontSize: 12;
@@ -7,14 +8,22 @@ $letterSpacing: 0.00em;
 $lineHeight: 1.2;
 $textTransform: none;
 $textDecoration: none;
+
+
+//grids
+$f-direction: row;
+$j-content: flex-start;
+$a-items: flex-start;
+$f-wrap: nowrap;
+
+//colors
 $fontColor: #1F2041;
 $accentPurple: #BC9CFF;
-
-
 $mainFontColor: #1F2041;
 $mainLinearGradient: linear-gradient(0deg, rgb(139, 164, 249), rgb(189, 158, 255));
 $priseBarLinearGradient: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 
+//media
 $lgDesktopWidth: 1920;
 $desktopWidth: 1440;
 $tabletWidth: 1200;

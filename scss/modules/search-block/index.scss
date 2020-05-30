@@ -1,0 +1,170 @@
+.search-block {
+    @include flexGrid($f-direction, space-between, $a-items, $f-wrap);
+    width: 80.5vw;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.search-block__rooms {
+    width: 100%;
+    @include flexGrid(column, flex-start, center, wrap);
+}
+
+.search-block__room-list {
+    width: 100%;
+    height: 100%;
+    max-width: 834px; //834px 57.917vw
+    max-height: 1091px; //1091px 75.764vw
+    @include flexGrid(row, space-between, center, wrap);
+    margin-left: 6.7%;
+}
+
+.search-block__room-headline {
+    @include fontOptions (22, 24, $headlineFont, 700, $lineHeight, 0.045em, $textDecoration, $textTransform, $fontColor);
+    align-self: flex-start;
+    margin: 3.5% 0% 2.4% 6.54%;
+}
+
+.search-block__room-card {
+    position: relative;
+    @include flexGrid(column, flex-start, center, nowrap);
+    width: 18.751vw; //270
+    height: 17.848vw; //257
+    max-width: 270px;
+    max-height: 257px;
+    margin-bottom: 2.48%;
+}
+
+.search-block__room-img-block {
+    position: relative;
+    width: inherit;
+    max-width: 270px;
+    height: 10.487vw; //151px
+    max-height: 151px;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0px 0px;
+    }
+}
+
+.search-block__room-btn {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+}
+
+.search-block__room-btn--left {
+    left: 7%;
+    top: 46%;
+    right: 0;
+    bottom: 0;
+    background-image: url(/assets/img/expand_left_wh.svg);
+}
+
+.search-block__room-btn--right {
+    left: 90%;
+    top: 46%;
+    right: 0%;
+    bottom: 0;
+    background-image: url(/assets/img/expand_right_wh.svg);
+}
+
+.search-block__room-controls {
+    @include flexGrid(row, space-between, center, nowrap);
+    position: absolute;
+    width: 42px;
+    height: 8px;
+    right: 15px;
+    bottom: 15px;
+    input {
+        @include hideCheckbox();
+    }
+    label {
+        display: flex;
+        width: 5.5px;
+        height: 5.5px;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        background-color: transparent;
+    }
+    input:checked+label {
+        background-color: #ffffff;
+    }
+}
+
+.search-block__room-info-block {
+    width: 100%;
+    height: auto;
+    @include flexGrid(column, flex-start, center, nowrap);
+}
+
+.search-block__room-price-block {
+    width: 87%;
+    height: auto;
+    max-height: 49.17%;
+    padding: 8% 0% 3.5% 0%;
+    @include flexGrid(row, flex-start, baseline, nowrap);
+    border-bottom: 1px solid rgba($fontColor, 0.1);
+}
+
+.search-block__room-number {
+    @include fontOptions (17, 19, $headlineFont, 700, $lineHeight, $letterSpacing, $textDecoration, $textTransform, $fontColor);
+    &:first-letter {
+        @include fontOptions (12, 14, $headlineFont, 700, $lineHeight, $letterSpacing, $textDecoration, $textTransform, $fontColor);
+    }
+}
+
+.search-block__room-class {
+    @include fontOptions (10, 12, $mainFont, 700, $lineHeight, $letterSpacing, $textDecoration, uppercase, rgba($accentPurple, 1));
+    margin-left: 2%;
+}
+
+.search-block__room-price {
+    @include fontOptions (12, 14, $mainFont, 700, 18px, $letterSpacing, $textDecoration, uppercase, rgba($fontColor, 0.5));
+    margin-left: auto;
+}
+
+.search-block__room-step {
+    @include fontOptions (10, 12, $mainFont, 400, 18px, $letterSpacing, $textDecoration, lowercase, rgba($fontColor, 0.5));
+    margin-left: 2%;
+}
+
+.search-block__room-number,
+.search-block__room-class,
+.search-block__room-price,
+.search-block__room-step {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.search-block__room-social-block {
+    width: 87%;
+    height: 52.43%;
+    @include flexGrid(row, flex-start, center, nowrap);
+}
+
+.search-block__room-rating {
+    width: auto;
+    max-width: 121px;
+    height: 19px;
+    svg {
+        width: 17.36%;
+    }
+}
+
+.search-block__room-count {
+    @include fontOptions (12, 14, $mainFont, 700, 18px, $letterSpacing, $textDecoration, $textTransform, rgba($fontColor, 0.5));
+    margin-left: auto;
+}
+
+.search-block__room-comment {
+    @include fontOptions (10, 12, $mainFont, 400, 18px, 0.02em, $textDecoration, $textTransform, rgba($fontColor, 0.5));
+    margin-left: 2%;
+}
