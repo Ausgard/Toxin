@@ -1,0 +1,132 @@
+.room-details {
+    width: 80.556vw;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.room-details__info {
+    @include flexGrid(row, flex-start, flex-start, wrap);
+    max-width: 710px;
+    width: 49.306vw;
+}
+
+.room-details__data {
+    max-width: 291px;
+    margin: 9.6% 2% 0% 0%;
+}
+
+.room-details__headline {
+    @include fontOptions (17, 19, $headlineFont, 700, $lineHeight, 0.04em, $textDecoration, $textTransform, rgba($fontColor, 1));
+    margin: 1% 0% 7.4% 0%;
+}
+
+.room-details__data-list {
+    @include flexGrid(column, space-between, center, nowrap);
+    width: auto;
+    height: 17.084vw;
+    max-height: 246px;
+    padding: 0%;
+    margin: 0% 0% 0% 0%;
+}
+
+.room-details__data-item {
+    width: 15.51vw;
+    height: 4.723vw;
+    max-width: 291px;
+    max-height: 68px;
+    list-style: none;
+    position: relative;
+    padding: 0% 0% 0% 20.5%;
+    &:not(:nth-last-of-type(1)) {
+        border-bottom: 1px solid rgba($fontColor, 0.1);
+    }
+    &:before {
+        @include pseudo(48px, 48px, $p-top, $p-right, $p-bottom, $p-left);
+    }
+    &:nth-of-type(1) {
+        &:before {
+            background-image: url(/assets/img/insert_emoticon.svg);
+            top: 4px;
+            left: 4px;
+        }  
+    }
+
+    &:nth-of-type(2) {
+        &:before {
+            background-image: url(/assets/img/location_city.svg);
+            top: 4px;
+            left: 6px;
+        }  
+    }
+
+    &:nth-of-type(3) {
+        &:before {
+            background-image: url(/assets/img/whatshot.svg);
+            top: 1px;
+            left: 7px;
+        }  
+    }
+}
+
+.room-details__sub-headline {
+    @include fontOptions ($baseFontSize, $maxFontSize, $mainFont, 700, 24px, $letterSpacing, $textDecoration, $textTransform, rgba($fontColor, 0.75));
+    margin: 0% 0% auto 0%;
+}
+
+.room-details__data-text {
+    @include fontOptions ($baseFontSize, $maxFontSize, $mainFont, 400, 24px, $letterSpacing, $textDecoration, $textTransform, rgba($fontColor, 0.75));
+    margin: 0% 0% 0% 0%;
+}
+
+.room-details__impressions {
+    @include flexGrid(row, flex-start, flex-start, wrap);
+    max-width: 311px;
+    max-height: 170px;
+    width: 21.598vw;
+    height: auto;
+    min-width: 280px;
+    margin: 9.6% 5.6% 0% auto;
+    svg {
+        margin: 0% 9% 0% 0.5%;
+    }
+    .room-details__headline {
+        margin: 1% 0% 20.516px 0%;
+    }
+
+}
+
+.room-details__result {
+    max-height: 96px;
+    margin: 28px 0% 0% auto;
+    @include flexGrid(column, space-between, flex-start, wrap);
+}
+
+.room-details__result-text {
+    position: relative;
+    @include fontOptions ($baseFontSize, $maxFontSize, $mainFont, 400, 24px, $letterSpacing, $textDecoration, $textTransform, rgba($fontColor, 0.75));
+    margin: 0% 0% 0% 0%;
+    &:before {
+        @include pseudo(10px, 10px, 6px, $p-right, $p-bottom, -13px);
+        border-radius: 50%;
+    }
+    &:nth-last-of-type(4){
+        &:before {
+            background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+        }
+    }
+    &:nth-last-of-type(3){
+        &:before {
+            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        }
+    }
+    &:nth-last-of-type(2){
+        &:before {
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        }
+    }
+    &:nth-last-of-type(1){
+        &:before {
+            background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+        }
+    }
+}

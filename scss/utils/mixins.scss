@@ -37,3 +37,23 @@
     align-items: $a-items;
     flex-wrap: $f-wrap;
 }
+
+@mixin pseudo($p-width, $p-height, $p-top, $p-right, $p-bottom, $p-left) {
+    display: flex;
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 0;
+    width: $p-width;
+    height: $p-height;
+    // background-image: $img-url;
+    top: $p-top;
+    right: $p-right;
+    bottom: $p-bottom;
+    left: $p-left;
+}
+$p-top: 0;
+$p-right: 0;
+$p-bottom: 0;
+$p-left: 0;
