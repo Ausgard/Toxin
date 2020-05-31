@@ -1,0 +1,39 @@
+.paginator {
+    @include flexGrid(row, space-between, center, wrap);
+    max-width: 241px;
+    width: auto;
+    height: auto;
+    max-height: 75px;
+    margin: 2.8% auto 0% 52.5%;
+}
+
+.paginator__link {
+    @include fontOptions ($baseFontSize, $baseFontSize, $mainFont, 400, $lineHeight, $letterSpacing, $textDecoration, $textTransform, rgba($fontColor, 0.5));
+}
+
+.paginator__link--current {
+    font-weight: 700;
+    color: #ffffff;
+    min-width: 40px;
+    min-height: 40px;
+    background: $mainLinearGradient;
+    border-radius: 50%;
+    @include flexGrid(row, center, center, nowrap);
+}
+
+.paginator__deskription {
+    @include fontOptions ($baseFontSize, $maxFontSize, $mainFont, 400, $lineHeight, $letterSpacing, $textDecoration, $textTransform, rgba($fontColor, 0.75));
+    margin: 5.5% 0% 0% 2%;
+}
+
+.paginator__btn {
+    min-width: 40px;
+    min-height: 40px;
+    background: $priseBarLinearGradient;
+    border-radius: 50%;
+    border: none;
+    padding: 0% 0% 0% 0%;
+    svg {
+        margin: 10% 0% 0% 0%;
+    }
+}
