@@ -110,7 +110,7 @@
     width: 87%;
     height: auto;
     max-height: 49.17%;
-    padding: 8% 0% 3.5% 0%;
+    padding: 8% 0% 3.5% 1%;
     @include flexGrid(row, flex-start, baseline, nowrap);
     border-bottom: 1px solid rgba($fontColor, 0.1);
 }
@@ -134,7 +134,7 @@
 
 .search-block__room-step {
     @include fontOptions (12, 12, $mainFont, 400, 18px, $letterSpacing, $textDecoration, lowercase, rgba($fontColor, 0.5));
-    margin-left: 2%;
+    margin-left: 2.3%;
 }
 
 .search-block__room-number,
@@ -154,10 +154,13 @@
 
 .search-block__room-rating {
     width: 100%;
-    max-width: 121px;
-    height: 25px;
+    max-width: 116.32px;
+    height: auto;
+    @include flexGrid(row, space-between, flex-start, nowrap);
+    padding: 0% 0% 2.1% 2.2%;
+    margin: 0% 4% 0% 0%;
     svg {
-        width: 17.36%;
+        width: 18%;
     }
 }
 
