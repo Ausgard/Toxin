@@ -1,0 +1,23 @@
+.room-preview {
+    @include flexGrid(column, flex-start, center, wrap);
+    max-height: 33.880vw;
+    width: 100vw;
+}
+
+.room-preview__item {
+    width: 31.876vw;
+    height: 16.831vw;
+    &:nth-of-type(2) {
+        width: 31.876vw;
+        height: 16.950vw;
+    }
+    &:nth-of-type(3) {
+        width: 31.876vw;
+        height: 16.723vw;
+    }
+}
+
+.room-preview__item--main {
+    width: 68.126vw;
+    height: 33.681vw;
+}
