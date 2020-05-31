@@ -29,8 +29,7 @@
     display: flex;
     align-items: center;
     min-height: 70px;
-    // @include fontOptions (13, $maxFontSize, $mainFont, $fontWeight, $lineHeight, $letterSpacing, 0.5);
-    @include fontOptions (13, $maxFontSize, $mainFont, $fontWeight, $lineHeight, $letterSpacing, $textTransform, $textDecoration, rgba($mainFontColor, 1));
+    @include fontOptions ($baseFontSize, $maxFontSize, $mainFont, $fontWeight, $lineHeight, $letterSpacing, $textTransform, $textDecoration, rgba($mainFontColor, 0.5));
     text-decoration: none;
     padding: 0 10px;
 }
